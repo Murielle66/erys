@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÉRYS : accessoires, parfums et tops essentiels pour sublimer votre quotidien.">
+  <title>ÉRYS — Élégance solaire</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="entete">
+    <a href="#accueil" class="logo">ÉRYS</a>
+    <nav class="menu">
+      <a href="#collection">Collection</a>
+      <a href="#histoire">Notre histoire</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="panier" type="button" aria-label="Voir le panier">
+      Panier (<span id="compteur-panier">0</span>)
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero" id="accueil">
+      <div class="hero-texte">
+        <p class="surtitre">Nouvelle collection</p>
+        <h1>L'élégance, <em>version soleil.</em></h1>
+        <p class="accroche">Des accessoires, des parfums et des tops essentiels pour celles qui aiment briller avec simplicité.</p>
+        <a href="#collection" class="bouton">Découvrir la collection</a>
+      </div>
+      <div class="hero-visuel" aria-hidden="true">
+        <div class="monogramme">É</div>
+      </div>
+    </section>
+
+    <section class="avantages">
+      <p>✦ Livraison rapide</p>
+      <p>✦ Pièces sélectionnées avec soin</p>
+      <p>✦ Paiement à la livraison</p>
+    </section>
+
+    <section class="collection" id="collection">
+      <h2>Notre collection</h2>
+
+      <div class="filtres">
+        <button type="button" class="filtre actif" data-filtre="tous">Tout</button>
+        <button type="button" class="filtre" data-filtre="accessoires">Accessoires</button>
+        <button type="button" class="filtre" data-filtre="parfums">Parfums</button>
+        <button type="button" class="filtre" data-filtre="tops">Tops</button>
+      </div>
+
+      <div class="grille-produits">
+
+        <!-- ===== COLLIERS ===== -->
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/collier-1.jpg" alt="Collier Soléa" loading="lazy"></div>
+          <h3>Collier Soléa</h3>
+          <p class="description">Plaqué or, fin et lumineux.</p>
+          <p class="prix">18 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Collier Soléa" data-prix="18000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/collier-2.jpg" alt="Collier Lumia" loading="lazy"></div>
+          <h3>Collier Lumia</h3>
+          <p class="description">Pendentif délicat, éclat doré.</p>
+          <p class="prix">16 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Collier Lumia" data-prix="16000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/collier-3.jpg" alt="Collier Ondine" loading="lazy"></div>
+          <h3>Collier Ondine</h3>
+          <p class="description">Chaîne souple, finition satinée.</p>
+          <p class="prix">20 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Collier Ondine" data-prix="20000">Ajouter au panier</button>
+        </article>
+
+        <!-- ===== BOUCLES D'OREILLES ===== -->
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/boucles-1.jpg" alt="Boucles Perle" loading="lazy"></div>
+          <h3>Boucles Perle</h3>
+          <p class="description">Perles nacrées, finition dorée.</p>
+          <p class="prix">15 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Boucles Perle" data-prix="15000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/boucles-2.jpg" alt="Boucles Éclat" loading="lazy"></div>
+          <h3>Boucles Éclat</h3>
+          <p class="description">Légères, lumineuses, faciles à porter.</p>
+          <p class="prix">12 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Boucles Éclat" data-prix="12000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/boucles-3.jpg" alt="Boucles Soleil" loading="lazy"></div>
+          <h3>Boucles Soleil</h3>
+          <p class="description">Créoles dorées, style solaire.</p>
+          <p class="prix">14 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Boucles Soleil" data-prix="14000">Ajouter au panier</button>
+        </article>
+
+        <!-- ===== SACS ===== -->
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/sac-1.jpg" alt="Sac Mirage" loading="lazy"></div>
+          <h3>Sac Mirage</h3>
+          <p class="description">Cuir souple, teinte pêche dorée.</p>
+          <p class="prix">65 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Sac Mirage" data-prix="65000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/sac-2.jpg" alt="Sac Zénith" loading="lazy"></div>
+          <h3>Sac Zénith</h3>
+          <p class="description">Format structuré, élégance du quotidien.</p>
+          <p class="prix">58 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Sac Zénith" data-prix="58000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/sac-3.jpg" alt="Sac Cannelle" loading="lazy"></div>
+          <h3>Sac Cannelle</h3>
+          <p class="description">Grand volume, finitions soignées.</p>
+          <p class="prix">72 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Sac Cannelle" data-prix="72000">Ajouter au panier</button>
+        </article>
+
+        <!-- ===== FOULARDS (visuels avec la marque ÉRYS) ===== -->
+        <article class="produit marque" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/foulard-1.jpg" alt="Foulard Corail ÉRYS en soie orange à motifs cachemire" loading="lazy"></div>
+          <h3>Foulard Corail</h3>
+          <p class="description">Soie satinée, motifs cachemire,bordure orange profond.</p>
+          <p class="prix">22 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Foulard Corail  " data-prix="22000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit marque" data-categorie="accessoires">
+          <div class="image-produit"><img src="images/foulard-2.jpg" alt="Foulard Papillon ÉRYS en soie turquoise" loading="lazy"></div>
+          <h3>Foulard Papillon</h3>
+          <p class="description">Soie turquoise, papillons dessinés,liseré éméraude.</p>
+          <p class="prix">24 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Foulard Papillon" data-prix="24000">Ajouter au panier</button>
+        </article>
+
+        <!-- ===== PARFUMS (visuels avec la marque ÉRYS) ===== -->
+        <article class="produit marque" data-categorie="parfums">
+          <div class="image-produit"><img src="images/parfum-1.jpg" alt="Parfum Aurore ÉRYS" loading="lazy"></div>
+          <h3>Parfum Aurore</h3>
+          <p class="description">Pêche rosée, rose et musc blanc, dans un flacon papillon.</p>
+          <p class="prix">38 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Parfum Aurore" data-prix="38000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit marque" data-categorie="parfums">
+          <div class="image-produit"><img src="images/parfum-2.jpg" alt="Parfum Ambre Solaire ÉRYS" loading="lazy"></div>
+          <h3>Ambre Solaire</h3>
+          <p class="description">Ambre chaud, fleur d'oranger et bois chauds.</p>
+          <p class="prix">42 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Ambre Solaire" data-prix="42000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit marque" data-categorie="parfums">
+          <div class="image-produit"><img src="images/parfum-3.jpg" alt="Parfum Cœur Rubis ÉRYS ,flacon en forme de cœur." loading="lazy"></div>
+          <h3>Cœur Rubis</h3>
+          <p class="description">Rose rouge,cerise noire et vanille, flacon en forme de  cœur .</p>
+          <p class="prix">36 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="cœur Rubis" data-prix="36000">Ajouter au panier</button>
+        </article>
+
+               <!-- ===== TOPS ===== -->
+        <article class="produit" data-categorie="tops">
+          <div class="image-produit"><img src="images/top-1.jpg" alt="Top Lys ÉRYS, encolure asymétrique et lys rose imprimé" loading="lazy"></div>
+          <h3>Top Lys</h3>
+          <p class="description">Encolure asymétrique, grand lys rose imprimé, taille froncée.</p>
+          <p class="prix">9 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Top Lys" data-prix="9000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="tops">
+          <div class="image-produit"><img src="images/top-2.jpg" alt="Trio Essentiel ÉRYS, trois tops manches longues blanc, rose et noir" loading="lazy"></div>
+          <h3>Trio Essentiel</h3>
+          <p class="description">Lot de 3 tops manches longues : blanc, rose et noir, taille froncée.</p>
+          <p class="prix">18 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Trio Essentiel" data-prix="18000">Ajouter au panier</button>
+        </article>
+
+        <article class="produit" data-categorie="tops">
+          <div class="image-produit"><img src="images/top-3.jpg" alt="Top Pois ÉRYS, manches chauve-souris blanc à pois noirs" loading="lazy"></div>
+          <h3>Top Pois</h3>
+          <p class="description">Manches chauve-souris, pois noirs sur fond blanc, taille ajustée.</p>
+          <p class="prix">8 000 FCFA</p>
+          <button type="button" class="bouton-panier" data-nom="Top Pois" data-prix="8000">Ajouter au panier</button>
+        </article>
+
+      </div>
+    </section>
+
+        <section class="histoire" id="histoire">
+      <h2>Notre histoire</h2>
+      <p class="histoire-intro">Avant d'être une marque, ÉRYS était un rêve.</p>
+      <p>Le rêve de créer des pièces qui font battre le cœur un peu plus fort : un parfum qui reste dans les souvenirs, un foulard noué avec grâce, un top simple qui donne envie de sortir et de briller.</p>
+      <p>Chez ÉRYS, nous croyons que l'élégance n'est pas réservée à quelques-unes. Elle se cache dans les détails : la douceur de la soie, le sillage d'un parfum, la confiance que l'on ressent en se regardant dans le miroir.</p>
+      <p class="histoire-signature">ÉRYS. Brillez à votre façon.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Restons en contact</h2>
+      <p>Recevez nos nouveautés et nos offres en avant-première.</p>
+      <form class="formulaire" id="formulaire-newsletter">
+        <label for="email" class="cache">Votre adresse e-mail</label>
+        <input type="email" id="email" placeholder="Votre e-mail" required>
+        <button type="submit" class="bouton">S'inscrire</button>
+      </form>
+      <p class="message-formulaire" id="message-formulaire" role="status"></p>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 ÉRYS. Tous droits réservés.</p>
+    <p class="credits">Projet fictif réalisé à des fins de portfolio. Images d'illustration, certaines générées par IA.</p>
+  </footer>
+    <div class="fond-panier" id="fond-panier"></div>
+
+  <aside class="tiroir" id="tiroir-panier" aria-label="Votre panier">
+    <div class="tiroir-entete">
+      <h2>Votre panier</h2>
+      <button type="button" id="fermer-panier" aria-label="Fermer le panier">✕</button>
+    </div>
+
+    <p class="panier-vide" id="panier-vide">Votre panier est vide pour le moment.</p>
+    <ul class="liste-panier" id="liste-panier"></ul>
+
+    <div class="tiroir-pied">
+      <p class="total">Total <strong id="total-panier">0 FCFA</strong></p>
+      <button type="button" class="bouton" id="commander">Commander sur WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
